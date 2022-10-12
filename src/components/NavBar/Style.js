@@ -7,11 +7,14 @@ export const Nav = styled.nav`
   height: 75px;
   position: fixed;
   width: 100%;
-  z-index: 1;
   top: 0;
+  z-index: 1;
+  // margin-top: 20px;
+ 
   }
 `;
 export const NavContainer = styled(container)`
+  ${container};
   height: 100%;
   display: flex;
   align-items: center;
@@ -24,7 +27,7 @@ export const NavLogo = styled.div`
   justify-content: center;
   img {
     max-width: 100%;
-    height: 50px;
+    height: 40px;
   }
 `;
 export const NavItems = styled.ul`
@@ -37,10 +40,10 @@ export const NavItems = styled.ul`
     flex-direction: column;
     position: absolute;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     z-index: 9999;
     left: ${({ click }) => (click ? '0' : '-100%')};
-    top: 75px;
+    top: 74px;
     background-color: ${color.black};
     width: 100%;
     display: table;
@@ -51,20 +54,16 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   color: ${color.white};
   transition: color 0.5s;
-  letter-spacing: 2px;
   &:hover {
     color: ${color.blue};
-  }
-  @media screen and (max-width: 800px) {
-    padding: 15px 0 15px 0;
   }
 `;
 export const NavItem = styled.li`
   margin-right: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   position: relative;
   @media screen and (max-width: 800px) {
-    margin-top: 35px;
+    margin-top: 30px;
     height: 35px;
     text-align: center;
     font-size: 1.5rem;

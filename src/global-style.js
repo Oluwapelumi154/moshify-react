@@ -11,6 +11,8 @@ box-sizing: border-box;
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 2rem;
 }
 *::before,
 *::after{
@@ -23,7 +25,7 @@ export const color = {
   white: '#FFF',
   // black: '#1a2228',
   black: '#002244',
-  blue: '#87CEFA'
+  blue: '#008fff'
 };
 
 export const fs = {

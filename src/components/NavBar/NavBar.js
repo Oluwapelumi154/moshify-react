@@ -19,23 +19,28 @@ const NavBar = () => {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo className='nav__logo'>
+          <NavLogo>
             <img src={Logo} alt='logo' />
           </NavLogo>
           <MobileMenu click={click} onClick={handleClick} />
           {click && <CloseMenu onClick={handleClick} />}
-          <NavItems click={click} className='nav_links'>
-            <NavItem className='nav__link'>
+          <NavItems click={click}>
+            <NavItem>
               <NavLink onClick={handleClick} to='/hosting'>
                 Hosting
               </NavLink>
             </NavItem>
-            <NavItem className='nav__link'>
+            <NavItem>
+              <NavLink onClick={handleClick} to='/domain'>
+                VPS
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink onClick={handleClick} to='/domain'>
                 Domain
               </NavLink>
             </NavItem>
-            <NavItem className='nav__link'>
+            <NavItem>
               <NavLink onClick={handleClick} to='/pricing'>
                 Pricing
               </NavLink>
