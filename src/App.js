@@ -1,7 +1,7 @@
 import { GlobalStyle } from './global-style';
 import { Route, Switch } from 'react-router-dom';
 import { NavBar } from './components';
-import { Hero, Search, Pricing } from './pages';
+import { Hero, Search, Pricing, Badges } from './pages';
 
 /* TODO:  Fix booking bug */
 /** FIXME: */
@@ -12,6 +12,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <Search />
+      <Badges />
       <Pricing />
     </>
   );

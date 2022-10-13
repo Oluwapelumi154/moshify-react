@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from '../../components/Badges/Badge';
+import Badge from '../../components/Badge/Badge';
 import {
   SearchContainer,
   FormBtn,
@@ -32,7 +32,6 @@ const Search = () => {
               </FormBtn>
             </InputGroup>
           </Cont>
-          <Badge />
         </SearchContainer>
       </SearchSection>
     </>

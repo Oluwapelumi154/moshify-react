@@ -36,7 +36,7 @@ export const SearchSection = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 90px 0 90px 0;
+  padding: 90px 0 40px 0;
 
   @media screen and (max-width: 800px) {
     padding: 35px 2rem 30px 2rem;

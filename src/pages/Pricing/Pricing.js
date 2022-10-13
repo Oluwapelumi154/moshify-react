@@ -6,9 +6,9 @@ const Pricing = () => {
     <>
       <PricingWrapper>
         <PricingContainer>
+          <Card type='medium' />
           <Card />
-          <Card />
-          <Card />
+          <Card type='medium' />
         </PricingContainer>
       </PricingWrapper>
     </>
